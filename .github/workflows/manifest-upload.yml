@@ -20,6 +20,8 @@ jobs:
         run: ./create_manifest.sh
   
   gcs_upload:
+    runs-on: ubuntu-latest
+    
     steps:
     - id: 'auth'
       uses: 'google-github-actions/auth@v0'

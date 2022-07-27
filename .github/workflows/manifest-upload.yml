@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Run a one-line script
+      - name: Create manifest
         run: ./create_manifest.sh
 
       - id: 'auth'
